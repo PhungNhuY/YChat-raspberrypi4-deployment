@@ -1,0 +1,9 @@
+service:
+  fe:
+    container_name: ychat-fe
+    restart: unless-stopped
+    image: yphung282/ychat-fe-arm:latest
+    ports:
+      - $VITE_PORT:80
+    env_file:
+      - ./.env
