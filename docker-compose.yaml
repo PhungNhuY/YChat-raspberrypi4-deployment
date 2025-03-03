@@ -1,4 +1,4 @@
-service:
+services:
   fe:
     container_name: ychat-fe
     restart: unless-stopped
